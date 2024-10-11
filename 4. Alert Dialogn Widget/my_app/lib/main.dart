@@ -35,32 +35,33 @@ class _MyHomeState extends State<MyHome> {
       ),
       body: Center(
         child: FloatingActionButton(
-            child: Text("Alert"),
-            onPressed: () {
-              showDialog(
-                context: context,
-                builder: (context) => AlertDialog(
-                  actions: [
-                    TextButton(
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                      },
-                      child: Text("Save"),
-                    ),
-                    TextButton(
-                      onPressed: () {
-                        Navigator.of(context).pop();
-                      },
-                      child: Text("Clear"),
-                    )
-                  ],
-                  title: Text("Alert Dialog"),
-                  contentPadding: EdgeInsets.all(25),
-                  content: Text(
-                      "This alert dialog button is created from floating action button, not from elevated button"),
-                ),
-              );
-            }),
+          child: Text("Alert"),
+          onPressed: () {
+            showDialog(
+              context: context,
+              builder: (context) => AlertDialog(
+                actions: [
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: Text("Save"),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: Text("Clear"),
+                  )
+                ],
+                title: Text("Alert Dialog"),
+                contentPadding: EdgeInsets.all(25),
+                content: Text(
+                    "This alert dialog button is created from floating action button, not from elevated button"),
+              ),
+            );
+          },
+        ),
       ),
     );
   }
