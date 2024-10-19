@@ -20,7 +20,6 @@ class MyApp extends StatelessWidget {
             return Chip(
               label: Text("Flutter chip"),
               backgroundColor: Colors.white,
-              // color: WidgetStateProperty.all(Colors.black),
               onDeleted: () {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
