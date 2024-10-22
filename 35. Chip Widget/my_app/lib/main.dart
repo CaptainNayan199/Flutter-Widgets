@@ -1,7 +1,4 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
-
 void main() {
   runApp(const MyApp());
 }
@@ -23,7 +20,6 @@ class MyApp extends StatelessWidget {
             return Chip(
               label: Text("Flutter chip"),
               backgroundColor: Colors.white,
-              // color: WidgetStateProperty.all(Colors.black),
               onDeleted: () {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
