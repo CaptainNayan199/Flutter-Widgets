@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Clip Path'),
+          title: const Text('Clip Path Widget'),
           centerTitle: true,
         ),
         body: ClipPath(
