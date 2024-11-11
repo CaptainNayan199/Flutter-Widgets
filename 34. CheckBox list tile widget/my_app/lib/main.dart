@@ -32,17 +32,17 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
-              Center(
+              const Center(
                 child: Text(
                   "Select your Hobby",
                   style: TextStyle(
-                      color: const Color.fromARGB(255, 0, 0, 0), fontSize: 50),
+                      color: Color.fromARGB(255, 0, 0, 0), fontSize: 50),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               CheckboxListTile(
@@ -53,12 +53,12 @@ class _MyAppState extends State<MyApp> {
                   });
                 },
                 activeColor: Colors.lightBlue,
-                title: Text("Singing"),
+                title: const Text("Singing"),
                 checkColor: Colors.black,
                 controlAffinity: ListTileControlAffinity.trailing,
-                subtitle: isCheck ? Text("Singing is checked!") : Text(""),
+                subtitle: isCheck ? const Text("Singing is checked!") : const Text(""),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               CheckboxListTile(
@@ -69,12 +69,12 @@ class _MyAppState extends State<MyApp> {
                   });
                 },
                 activeColor: Colors.lightBlue,
-                title: Text("Dancing"),
+                title: const Text("Dancing"),
                 checkColor: Colors.black,
                 controlAffinity: ListTileControlAffinity.trailing,
-                subtitle: isDance ? Text("Dancing is checked!") : Text(""),
+                subtitle: isDance ? const Text("Dancing is checked!") : const Text(""),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               CheckboxListTile(
@@ -85,12 +85,12 @@ class _MyAppState extends State<MyApp> {
                   });
                 },
                 activeColor: Colors.lightBlue,
-                title: Text("Coding"),
+                title: const Text("Coding"),
                 checkColor: Colors.black,
                 controlAffinity: ListTileControlAffinity.trailing,
-                subtitle: isCoding ? Text("Coding is checked!") : Text(""),
+                subtitle: isCoding ? const Text("Coding is checked!") : const Text(""),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
             ],

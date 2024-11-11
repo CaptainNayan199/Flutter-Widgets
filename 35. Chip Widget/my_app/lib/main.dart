@@ -18,11 +18,11 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Builder(builder: (context) {
             return Chip(
-              label: Text("Flutter chip"),
+              label: const Text("Flutter chip"),
               backgroundColor: Colors.white,
               onDeleted: () {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
+                  const SnackBar(
                     duration: Duration(seconds: 1),
                     content: Text("Chip deleted"),
                   ),
