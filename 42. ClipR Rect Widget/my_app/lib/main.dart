@@ -26,7 +26,14 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: ClipRRect(
             borderRadius: BorderRadius.circular(30),
-            child: Icon(Icons.add, size:50, color: Colors.orange)
+            child: Container(
+              height: 200,
+              width: 150,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.orangeAccent),
+              child: const Icon(Icons.add, size: 100, color: Colors.white),
+            ),
           ),
         ),
       ),
