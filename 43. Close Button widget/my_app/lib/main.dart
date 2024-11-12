@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,7 +23,14 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Close Button Widget'),
           centerTitle: true,
         ),
-        body: Center(),
+        body: Center(
+          child: CloseButton(
+            color: Colors.red,
+            onPressed: () {
+              debugPrint("Close Button pressed!");
+            },
+          ),
+        ),
       ),
     );
   }
